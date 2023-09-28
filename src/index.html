@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memes generator</title>
+    <link rel="stylesheet" href="./assets/style/main.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="actions">
+
+        <div class="tools">
+            <div class="input-wrapper">
+                <input type="file" id="input-file" class="input">
+                <label for="input-file" class="input-label" title="Upload image">
+                    <img src="./assets/img/icon-upload.png" alt="upload image">
+                </label>
+
+                <div class="image-info">
+                    <span class="image-info__name"></span>
+                    <span class="image-info__size"></span>
+                </div>
+            </div>
+
+            <button class="btn-add-text" title="Add text"><img src="./assets/img/icon-text.png" alt="add text"></button>
+        </div>
+
+
+        <div>
+            <button class="btn-undo" title="Undo"><img src="./assets/img/icon-undo.png" alt="undo"></button>
+            <button class="btn-redo" title="Redo"><img src="./assets/img/icon-redo.png" alt="redo"></button>
+
+            <button class="btn-download-meme" title="Download meme"><img src="./assets/img/icon-save.png" alt="save"></button>
+        </div>
+    </div>
+</header>
+
+
+<div class="canvas-wrapper">
+    <canvas id="canvas-meme" width="480" height="520"></canvas>
+</div>
+
+<script src="./js/canvasState.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

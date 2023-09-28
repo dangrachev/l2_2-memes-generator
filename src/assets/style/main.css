@@ -1,0 +1,134 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header {
+    height: 100px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 0 10px #b9b9b9;
+}
+
+.canvas-wrapper {
+    width: auto;
+    height: auto;
+    margin: auto;
+    border: 1px solid #cccccc;
+
+    display: inline-block;
+
+    position: relative;
+}
+
+.actions {
+    width: 95%;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper {
+    width: 180px;
+    height: 50px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    display: none;
+}
+.input-label {
+    width: 50px;
+    height: 50px;
+    margin: 0 4px 0 0;
+
+    border-radius: 10px;
+}
+.input-label:hover {
+    background-color: #eeeeee;
+}
+.input-label img {
+    width: 38px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #eeeeee;
+}
+button img {
+    width: 32px;
+}
+
+.btn-add-text {
+    margin: 0 0 0 15px;
+}
+.btn-undo {
+
+}
+.btn-redo {
+
+}
+.btn-download-meme {
+
+}
+
+
+textarea {
+    height: auto;
+    width: 75%;
+    border: 2px dashed #fff;
+
+    position: absolute;
+    top: 25px;
+    left: 14%;
+    z-index: 4;
+
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: bold;
+    outline: none;
+}
+textarea::placeholder {
+    color: #fff;
+}
+
+
+.image-info {
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+.image-info__name {
+    width: auto;
+}
+.image-info__size {
+    width: auto;
+}
